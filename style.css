@@ -1,5 +1,9 @@
 /* Set background color of the page to #323232 */
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #323232;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -8,10 +12,11 @@ body {
 
 h1 {
     text-align: center;
+    
 }
 
 #content {
-    margin-top: 200px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,17 +73,29 @@ table tr td:last-child {
 }
 
 button {
-    display: block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    color: #fff;
+    font-family: 'Open Sans', sans-serif;
     background-color: #00B0EF;
+    /* Farbe des Hintergrunds */
+    color: white;
+    /* Schriftfarbe */
+    border: none;
+    /* Kein Rand */
+    padding: 10px 20px;
+    /* Innenabstand */
+    border-radius: 5px;
+    /* Abgerundete Ecken */
     font-size: 16px;
-    font-weight: bold;
+    /* Schriftgröße */
     cursor: pointer;
+    /* Handzeiger beim Überfahren */
+    margin-top: 50px;
+    /* Abstand nach oben */
+    transition: background-color 0.3s;
+    /* Übergangseffekt */
 }
 
 button:hover {
-    background-color: #96cadd;
+    background-color: #008ACD;
+    /* Dunklere Farbe beim Überfahren */
 }
+
